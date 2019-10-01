@@ -11,7 +11,7 @@ ArrayList is implemented as a resizable array. Its elements can be accessed dire
 LinkedList is implemented as a double linked list. Its performance on add and remove is better than Arraylist, but worse on get and set methods.
 
 (Code of arrays)
-
+```
 
 	public static void main(String[] args) {
 	
@@ -30,11 +30,12 @@ LinkedList is implemented as a double linked list. Its performance on add and re
 		long end = System.currentTimeMillis();
 		
 	    System.out.println("for list, time is " + (end - start) + "ms");
-}}
-
+}
+}
+```
 (Code of Arraylist)
 
-
+```
 	public static void main(String[] args) {
 	
 	int n = 100000000;
@@ -53,11 +54,11 @@ LinkedList is implemented as a double linked list. Its performance on add and re
 	
 	}
 	}
- 
+ ```
   
 (Code of LinkedList)
 
-
+```
 	public static void main(String[] args) {
 		int n = 100000000;
 	float num = 0;
@@ -73,5 +74,5 @@ LinkedList is implemented as a double linked list. Its performance on add and re
     System.out.println("for Linkedlist, time is " + (end - start) + "ms");
 }
 }
-
+```
 
