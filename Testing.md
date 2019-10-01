@@ -3,7 +3,7 @@ First, we choosed type P in design 2 and also entered the point, then run the co
 to see the result. Second, we choosed type C in design 3 and also entered the point, then run the code. Then, we changed the 
 type to P to see the result. In design 6, we put C and the point into the code with two results, and the same with type P.
 # sample outputs from running the tests
-  # Output from Design 2
+  # Outputs from Design 2
 
 ```
 if the type is Polar, result as follow:
@@ -29,7 +29,7 @@ Computed Cartesian as (1.3999999999999995,5.8)
 
 ```
 
-# Output from Design 3
+# Outputs from Design 3
 
 ```
 if the type is Cartesian, result as follow:
@@ -57,7 +57,7 @@ Computed Polar as (12.3,5.7)
 
 ```
 
-# Output from Design 6
+# Outputs from Design 6
 
 ```
 if the type is Cartesian, result as follow:
@@ -84,4 +84,8 @@ Stored as Cartesian (14.849616690802229,15.270195942955281)
 After asking to store as Polar:
 Stored as Polar [21.3,45.8]
 ```
-
+# the table 
+| Design/output |  |
+| ------------ | ---------------- |
+| 2104         | 460              |
+| 1416         | 232              |
