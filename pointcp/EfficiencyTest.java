@@ -5,10 +5,10 @@ public class EfficiencyTest {
      * Find average time to get each Cartesian coordinate from getter method in PointCP
      * @param type char value of either C or P
      * @param testTimeSeconds time to run test in seconds
-     * @return average operation time in nanoseconds
+     * @return average operation time in milliseconds
      */
     public static long getC_XPointCP(char type, long testTimeSeconds){
-        long testTimeMillis = testTimeSeconds * 1000 * 1000;
+        long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -23,7 +23,7 @@ public class EfficiencyTest {
 
     
     public static long getC_YPointCP(char type, long testTimeSeconds){
-    	long testTimeMillis = testTimeSeconds * 1000 * 1000;
+    	long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -39,10 +39,10 @@ public class EfficiencyTest {
      * Find average time to get each Cartesian coordinate from getter method in PointCP Design 2
      * @param type char value of either C or P
      * @param testTimeSeconds time to run test in seconds
-     * @return average operation time in nanoseconds
+     * @return average operation time in milliseconds
      */
     public static long getC_XDesign2(char type, long testTimeSeconds) {
-        long testTimeMillis = testTimeSeconds * 1000 * 1000;
+        long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -56,7 +56,7 @@ public class EfficiencyTest {
     }
     
     public static long getC_YDesign2(char type, long testTimeSeconds) {
-    	long testTimeMillis = testTimeSeconds * 1000 * 1000;
+    	long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -70,13 +70,13 @@ public class EfficiencyTest {
     }
 
     /**
-     * Find average time to get each Cartesian coordinate from getter method in PointCP Design 4
+     * Find average time to get each Cartesian coordinate from getter method in PointCP Design 3
      * @param type char value of either C or P
      * @param testTimeSeconds time to run test in seconds
-     * @return average operation time in nanoseconds
+     * @return average operation time in milliseconds
      */
     public static long getC_XDesign3(char type, long testTimeSeconds) {
-        long testTimeMillis = testTimeSeconds * 1000 * 1000;
+        long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -91,7 +91,7 @@ public class EfficiencyTest {
 
     
     public static long getC_YDesign3(char type, long testTimeSeconds) {
-    	long testTimeMillis = testTimeSeconds * 1000 * 1000;
+    	long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -104,9 +104,14 @@ public class EfficiencyTest {
         return result;
     }
     
-    
+    /**
+     * Find average time to get each Cartesian coordinate from getter method in PointCP Design 6
+     * @param type char value of either C or P
+     * @param testTimeSeconds time to run test in seconds
+     * @return average operation time in milliseconds
+     */
     public static long getC_XDesign6(char type, long testTimeSeconds) {
-        long testTimeMillis = testTimeSeconds * 1000 * 1000;
+        long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -121,7 +126,7 @@ public class EfficiencyTest {
 
     
     public static long getC_YDesign6(char type, long testTimeSeconds) {
-    	long testTimeMillis = testTimeSeconds * 1000 * 1000;
+    	long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -138,10 +143,10 @@ public class EfficiencyTest {
      * Find average time to get each Polar  coordinate from getter method in PointCP
      * @param type char value of either C or P
      * @param testTimeSeconds time to run test in seconds
-     * @return average operation time in nanoseconds
+     * @return average operation time in milliseconds
      */
     public static long getP_RhoPointCP(char type, long testTimeSeconds) {
-        long testTimeMillis = testTimeSeconds * 1000 * 1000;
+        long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -155,7 +160,7 @@ public class EfficiencyTest {
     }
     
     public static long getP_ThetaPointCP(char type, long testTimeSeconds) {
-    	long testTimeMillis = testTimeSeconds * 1000 * 1000;
+    	long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -172,10 +177,10 @@ public class EfficiencyTest {
      * Find average time to get each Polar  coordinate from getter method in PointCP Design 2
      * @param type char value of either C or P
      * @param testTimeSeconds time to run test in seconds
-     * @return average operation time in nanoseconds
+     * @return average operation time in milliseconds
      */
     public static long getP_RhoDesign2(char type, long testTimeSeconds) {
-        long testTimeMillis = testTimeSeconds * 1000 * 1000;
+        long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -190,7 +195,7 @@ public class EfficiencyTest {
 
     
     public static long getP_ThetaDesign2(char type, long testTimeSeconds) {
-    	long testTimeMillis = testTimeSeconds * 1000 * 1000;
+    	long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -203,13 +208,13 @@ public class EfficiencyTest {
         return result;
     }
     /**
-     * Find average time to get each Polar  coordinate from getter method in PointCP Design 4
+     * Find average time to get each Polar  coordinate from getter method in PointCP Design 3
      * @param type char value of either C or P
      * @param testTimeSeconds time to run test in seconds
-     * @return average operation time in nanoseconds
+     * @return average operation time in milliseconds
      */
     public static long getP_RhoDesign3(char type, long testTimeSeconds) {
-        long testTimeMillis = testTimeSeconds * 1000 * 1000;
+        long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -224,7 +229,7 @@ public class EfficiencyTest {
     
     
     public static long getP_ThetaDesign3(char type, long testTimeSeconds) {
-    	long testTimeMillis = testTimeSeconds * 1000 * 1000;
+    	long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -237,9 +242,14 @@ public class EfficiencyTest {
         return result;
     }
 
-    
+    /**
+     * Find average time to get each Polar  coordinate from getter method in PointCP Design 6
+     * @param type char value of either C or P
+     * @param testTimeSeconds time to run test in seconds
+     * @return average operation time in milliseconds
+     */
     public static long getP_RhoDesign6(char type, long testTimeSeconds) {
-        long testTimeMillis = testTimeSeconds * 1000 * 1000;
+        long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -254,7 +264,7 @@ public class EfficiencyTest {
 
     
     public static long getP_ThetaDesign6(char type, long testTimeSeconds) {
-    	long testTimeMillis = testTimeSeconds * 1000 * 1000;
+    	long testTimeMillis = testTimeSeconds * 1000;
         long count = 0;
         long start = System.currentTimeMillis();
         long limit = start + testTimeMillis;
@@ -277,14 +287,17 @@ public class EfficiencyTest {
         System.out.println("Average time for getting X of Cartesian from Cartesian Design2: "+getC_XDesign2('C', testTime)+"ms");
         System.out.println("Average time for getting X of Cartesian from Cartesian Design3: "+getC_XDesign3('C', testTime)+"ms");
         System.out.println("Average time for getting X of Cartesian from Cartesian Design6: "+getC_XDesign6('C', testTime)+"ms");
+        
         System.out.println("Average time for getting Y of Cartesian from Cartesian PointCP: "+getC_YPointCP('C', testTime)+"ms");
         System.out.println("Average time for getting Y of Cartesian from Cartesian Design2: "+getC_YDesign2('C', testTime)+"ms");
         System.out.println("Average time for getting Y of Cartesian from Cartesian Design3: "+getC_YDesign3('C', testTime)+"ms");
         System.out.println("Average time for getting Y of Cartesian from Cartesian Design6: "+getC_YDesign6('C', testTime)+"ms");
+        
         System.out.println("Average time for getting Rho of Polar from Cartesian PointCP: "+getP_RhoPointCP('C', testTime)+"ms");
         System.out.println("Average time for getting Rho of Polar from Cartesian Design2: "+getP_RhoDesign2('C', testTime)+"ms");
         System.out.println("Average time for getting Rho of Polar from Cartesian Design3: "+getP_RhoDesign3('C', testTime)+"ms");
         System.out.println("Average time for getting Rho of Polar from Cartesian Design6: "+getP_RhoDesign6('C', testTime)+"ms");
+       
         System.out.println("Average time for getting Theta of Polar from Cartesian PointCP: "+getP_ThetaPointCP('C', testTime)+"ms");
         System.out.println("Average time for getting Theta of Polar from Cartesian Design2: "+getP_ThetaDesign2('C', testTime)+"ms");
         System.out.println("Average time for getting Theta of Polar from Cartesian Design3: "+getP_ThetaDesign3('C', testTime)+"ms");
