@@ -7,22 +7,23 @@ outputs from the various tests.
 if the type is Polar, result as follow:
 Cartesian-Polar Coordinates Conversion Program
 Enter the type of Coordinates you are inputting ((C)artesian / (P)olar): p
-Enter the value of Rho using a decimal point(.): 10.0
-Enter the value of Theta using a decimal point(.): 25.0
+Enter the value of Rho using a decimal point(.): 2.4
+Enter the value of Theta using a decimal point(.): 5.6
+
 You entered:
-Stored as Polar [10.0,25.0]
+Stored as Polar (2.4,5.6)
+Computed Cartesian as (2.388545759956395,0.2341989594219587)
 
 If the type is Cartesian, result as follow:
 Cartesian-Polar Coordinates Conversion Program
 Enter the type of Coordinates you are inputting ((C)artesian / (P)olar): c
-Enter the value of X using a decimal point(.): 20.0
-Enter the value of Y using a decimal point(.): 15.5
-Exception in thread "main" java.lang.IllegalArgumentException
-at design2.Design2.<init>(Design2.java:33)
+Enter the value of X using a decimal point(.): 1.4
+Enter the value of Y using a decimal point(.): 5.8
 
-at design2.PointCPTest.getInput(PointCPTest.java:159)
+You entered:
+Stored as Polar (5.966573556070519,76.42956561483852)
+Computed Cartesian as (1.3999999999999995,5.8)
 
-at design2.PointCPTest.main(PointCPTest.java:56)
 
 ```
 
@@ -31,23 +32,26 @@ at design2.PointCPTest.main(PointCPTest.java:56)
 ```
 if the type is Cartesian, result as follow:
 Cartesian-Polar Coordinates Conversion Program
-Enter the type of Coordinates you are inputting ((C)artesian / (P)olar): C
-Enter the value of X using a decimal point(.): 5.0
-Enter the value of Y using a decimal point(.): 8.0
+Enter the type of Coordinates you are inputting ((C)artesian / (P)olar): c
+Enter the value of X using a decimal point(.): 20.0
+Enter the value of Y using a decimal point(.): 34.6
+
 You entered:
-Stored as Cartesian (5.0,8.0)
+Stored as Cartesian  (20.0,34.6)
+Computed Polar as (39.964484232878576,59.97059823848534)
+
 
 If the type is Polar, result as follow:
 Cartesian-Polar Coordinates Conversion Program
 Enter the type of Coordinates you are inputting ((C)artesian / (P)olar): p
-Enter the value of Rho using a decimal point(.): 20.0
-Enter the value of Theta using a decimal point(.): 45.0
-Exception in thread "main" java.lang.IllegalArgumentException
-at design3.Design3.<init>(Design3.java:47)
+Enter the value of Rho using a decimal point(.): 12.3
+Enter the value of Theta using a decimal point(.): 5.7
 
-at design3.PointCPTest.getInput(PointCPTest.java:163)
+You entered:
+Stored as Cartesian  (12.239183510523084,1.2216329218467599)
+Computed Polar as (12.3,5.7)
 
-at design3.PointCPTest.main(PointCPTest.java:60)
+
 
 ```
 
