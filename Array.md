@@ -1,11 +1,12 @@
 | Type | Collection | Time | Collection | Time | Collection | Time |
 | --- | --- | --- |--- | --- | --- |--- | 
-| oridinary arrays | n = 100000000|  |
-| ArrayList | n = 100000000 |  |
-| LinkedList | n = 100000000 |  |
+| oridinary arrays | n = 100000000|  | n = 10000000 | | n = 10000000||
+| ArrayList | n = 100000000 |  | n = 1000000000 | | n = 10000000| |
+| LinkedList | n = 100000000 |  | n = 1000000000 | | n = 10000000| |
 
 
 (Code of arrays)
+
 import java.util.Random;
 
 public class list {
@@ -28,8 +29,10 @@ public class list {
 
 
 (Code of Arraylist)
+
 import java.util.ArrayList;
 import java.util.Random;
+
 public class Array {
 	public static void main(String[] args) {
 	int n = 100000000;
@@ -51,6 +54,7 @@ public class Array {
   
   
 (Code of LinkedList)
+
 import java.util.LinkedList;
 import java.util.Random;
 
