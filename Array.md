@@ -1,7 +1,7 @@
 | Type | Collection | Time | Collection | Time | Collection | Time |
 | --- | --- | --- |--- | --- | --- |--- | 
 | oridinary arrays | n = 100000000|  | n = 10000000 | | n = 10000000||
-| ArrayList | n = 100000000 |  | n = 10000000 | | n = 10000000| |
+| ArrayList | n = 100000000 | 116275ms | n = 10000000 | | n = 10000000| |
 | LinkedList | n = 100000000 | 356812ms | n = 10000000 | 24061ms | n = 10000000| 531ms |
 
 
@@ -29,7 +29,9 @@ public class list {
 		long end = System.currentTimeMillis();
 		
 	    System.out.println("for list, time is " + (end - start) + "ms");
-}}
+}
+}
+}
 
 (Code of Arraylist)
 
@@ -56,7 +58,7 @@ public class Array {
 	
 	}
 	}
-  
+ 
   
 (Code of LinkedList)
 
@@ -79,5 +81,7 @@ public class Linkedlist {
 	
     System.out.println("for Linkedlist, time is " + (end - start) + "ms");
 }
+
 }
+
 
