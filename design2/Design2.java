@@ -1,3 +1,5 @@
+package design2;
+import design3.Design3;
 public class Design2
 {
     //Instance variables ************************************************
@@ -12,13 +14,15 @@ public class Design2
      * * Contains the current value of X or RHO depending on the type
      * of coordinates.
      */
-    private double xOrRho;
+    private double rho;
 
     /**
      * * Contains the current value of Y or THETA value depending on the
      * type of coordinates.
      */
-    private double yOrTheta;
+    private double theta;
+    private double x;
+    private double y;
 
 
     //Constructors ******************************************************
@@ -26,13 +30,17 @@ public class Design2
     /**
      * * Constructs a coordinate object, with a type identifier.
      */
-    public Design2 (char type, double xOrRho, double yOrTheta)
-    {
-        if (type != 'P')
-            throw new IllegalArgumentException ();
-        this.xOrRho = xOrRho;
-        this.yOrTheta = yOrTheta;
-        typeCoord = type;
+    public Design2(char type, double rho, double theta) {
+        if(type != 'C' && type != 'P')
+            throw new IllegalArgumentException();
+        this.typeCoord = type;
+        if(this.typeCoord == 'C'){
+            this.rho = (Math.sqrt(Math.pow(rho, 2) + Math.pow(theta, 2)));
+            this.theta = Math.toDegrees(Math.atan2(theta, rho));
+        }else{
+            this.rho = rho;
+            this.theta = theta;
+        }
     }
 
 
@@ -41,57 +49,51 @@ public class Design2
 
     public double getX ()
     {
-        return (Math.cos (Math.toRadians (yOrTheta)) * xOrRho);
+        return (Math.cos (Math.toRadians (theta)) * rho);
     }
 
 
     public double getY ()
     {
-        return (Math.sin (Math.toRadians (yOrTheta)) * xOrRho);
+        return (Math.sin (Math.toRadians (theta)) * rho);
     }
 
 
     public double getRho ()
     {
-        return xOrRho;
+        return rho;
     }
 
 
     public double getTheta ()
     {
-        return yOrTheta;
+        return theta;
     }
 
 
     /**
     *ConvertsCartesiancoordinates to Polar coordinates.
     */
-    public void convertStorageToPolar ()
+    public Design2 convertStorageToPolar ()
     {
         if (typeCoord != 'P')
         {
             //Calculate RHO and THETA
             double temp = getRho ();
-            yOrTheta = getTheta ();
-            xOrRho = temp;
+            theta = getTheta ();
+            rho = temp;
             typeCoord = 'P';  //Change coord type identifier
         }
+        return (new Design2 (typeCoord, rho, theta));
     }
 
 
     /**
      * Converts Polar coordinates to Cartesian coordinates.
      */
-    public void convertStorageToCartesian ()
+    public Design3 convertStorageToCartesian ()
     {
-        if (typeCoord != 'C')
-        {
-            //Calculate X and Y
-            double temp = getX ();
-            yOrTheta = getY ();
-            xOrRho = temp;
-            typeCoord = 'C';  //Change coord type identifier
-        }
+    	 return (new Design3 (typeCoord, x, y));
     }
 
 
@@ -141,9 +143,8 @@ public class Design2
     */
     public String toString ()
     {
-        return "Stored as " + (typeCoord == 'C'
-                ? "Cartesian  (" + getX () + "," + getY () + ")"
-                :
-        "Polar [" + getRho () + "," + getTheta () + "]") + "\n";
+    	return "Stored as Polar (" + getRho() + "," + getTheta()  + ")\n" +
+        		"Computed Cartesian as (" + getX() + "," + getY() + ")";
     }
 }
+
