@@ -1,18 +1,23 @@
 | Type | Collection | Time | Collection | Time | Collection | Time |
 | --- | --- | --- |--- | --- | --- |--- | 
 | oridinary arrays | n = 100000000|  | n = 10000000 | | n = 10000000||
-| ArrayList | n = 100000000 |  | n = 1000000000 | | n = 10000000| |
-| LinkedList | n = 100000000 |  | n = 1000000000 | | n = 10000000| |
+| ArrayList | n = 100000000 |  | n = 10000000 | | n = 10000000| |
+| LinkedList | n = 100000000 |  | n = 10000000 | | n = 10000000| |
 
 
 (Code of arrays)
 
+
 import java.util.Random;
 
 public class list {
+
 	public static void main(String[] args) {
+	
 		int n = 100000000;
+		
 		float num = 0;
+		
 		long start = System.currentTimeMillis();
 		
 		float[] arr = new float[n];
@@ -34,7 +39,9 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Array {
+
 	public static void main(String[] args) {
+	
 	int n = 100000000;
 
 		float num = 0;
