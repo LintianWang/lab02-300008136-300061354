@@ -331,7 +331,7 @@ Stored as Polar [22.3,1.4000000000000004]
 
 
 # The table 
-| Design/value |   Input     |           as Polar                     |               Cartesian                  |
+| Design/value |   Input     |              Polar                     |               Cartesian                  |
 | ------------ | ---------   | -------------------------------------  | --------------------------------------   |
 | Design2      | P 2.4 5.6   | (2.4,5.6)                              | (2.388545759956395,0.2341989594219587)   |
 |              | P 12.3 23.1 | (12.3 23.1)                            | (11.313804417057373,4.825746534223807)   |
@@ -364,4 +364,6 @@ Stored as Polar [22.3,1.4000000000000004]
 |              | C 2.3 91.2  | (91.22899758300538,88.55534686904288)  | (2.3,91.2)                               |
 |              | C 12.4 34.8 | (36.943199644860215,70.38790629109593) | (12.4,34.8)                              |
 
-
+# Discussion of the results
+From the results, we could see without interface like design 6, one method could only have one way to calculate once a time.
+While we use the interface to connect the methods we need to use, we could efficiently use the method we want to use. We could transfer the different methods through judgment code to lead the calculation to the  correct method. Interface maked the calculation less time-cost, it means this way can save much time if we have two or more methods meed to be transfered in the future.
