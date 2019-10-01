@@ -4,6 +4,10 @@
 | ArrayList | n = 100000000 | 116275ms | n = 10000000 | 6740ms | n = 10000000| 273ms |
 | LinkedList | n = 100000000 | 356812ms | n = 10000000 | 24061ms | n = 10000000| 531ms |
 
+Conclusions:
+ArrayList is implemented as a resizable array. Its elements can be accessed directly by using the get and set methods, since ArrayList is essentially an array. 
+
+LinkedList is implemented as a double linked list. Its performance on add and remove is better than Arraylist, but worse on get and set methods.
 
 (Code of arrays)
 
