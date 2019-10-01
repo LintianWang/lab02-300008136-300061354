@@ -1,38 +1,73 @@
-Average time for initializing C PointCP: 221ns
+| Type | Collection | Time | Collection | Time | Collection | Time |
+| --- | --- | --- |--- | --- | --- |--- | 
+| oridinary arrays | n = 100000000|  |
+| ArrayList | n = 100000000 |  |
+| LinkedList | n = 100000000 |  |
 
-Average time for initializing C Design2: 415ns
 
-Average time for initializing C Design3: 366ns
+(Code of arrays)
+import java.util.Random;
 
-Average time for initializing P PointCP: 163ns
+public class list {
+	public static void main(String[] args) {
+		int n = 100000000;
+		float num = 0;
+		long start = System.currentTimeMillis();
+		
+		float[] arr = new float[n];
+		
+		for (int i = 0; i < n; i++) {
+			num = (float)(0 + ((9.0 - 0) * new Random().nextDouble()));
+			arr[i] = num;
+			}
+		long end = System.currentTimeMillis();
+		
+	    System.out.println("for list, time is " + (end - start) + "ms");
+}
+}
 
-Average time for initializing P Design2: 172ns
 
-Average time for initializing P Design3: 215ns
+(Code of Arraylist)
+import java.util.ArrayList;
+import java.util.Random;
+public class Array {
+	public static void main(String[] args) {
+	int n = 100000000;
 
-Average time for getting Cartesian from Cartesian PointCP: 39ns
+		float num = 0;
+		long start = System.currentTimeMillis();
+		
+		ArrayList<Float> list = new ArrayList<>();
+        for (int i = 1; i < n; i++) {
+        	num = (float)(0 + ((9.0 - 0) * new Random().nextDouble()));
+            list.add(new Float(num));
+        }
+        long end = System.currentTimeMillis();
+    	
+        System.out.println("for Arraylist, time is " + (end - start) + "ms");
+	
+	}
+	}
+  
+  
+(Code of LinkedList)
+import java.util.LinkedList;
+import java.util.Random;
 
-Average time for getting Cartesian from Cartesian Design2: 35ns
+public class Linkedlist {
 
-Average time for getting Cartesian from Cartesian Design3: 37ns
-
-Average time for getting Polar from Cartesian PointCP: 147ns
-
-Average time for getting Polar from Cartesian Design2: 44ns
-
-Average time for getting Polar from Cartesian Design3: 46ns
-
-Average time for getting Cartesian from Polar PointCP: 36ns
-
-Average time for getting Cartesian from Polar Design2: 36ns
-
-Average time for getting Cartesian from Polar Design3: 33ns
-
-Average time for getting Polar from Polar PointCP: 32ns
-
-Average time for getting Polar from Polar Design2: 32ns
-
-Average time for getting Polar from Polar Design3: 35ns
-
-Conclusions:
-From the results above, if we want to initialize a Polar coordinate or a Cartesian coordinate, use interface will be a little fast.
+	public static void main(String[] args) {
+		int n = 100000000;
+	float num = 0;
+	long start = System.currentTimeMillis();
+	
+	LinkedList<Float> list = new LinkedList<>();
+    for (int i = 1; i < n; i++) {
+    	num = (float)(0 + ((9.0 - 0) * new Random().nextDouble()));
+        list.add(new Float(num));
+    }
+    long end = System.currentTimeMillis();
+	
+    System.out.println("for Linkedlist, time is " + (end - start) + "ms");
+}
+}
