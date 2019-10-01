@@ -3,7 +3,7 @@ First, we choosed type P in design 2 and also entered the point, then run the co
 to see the result. Second, we choosed type C in design 3 and also entered the point, then run the code. Then, we changed the 
 type to P to see the result. In design 6, we put C and the point into the code with two results, and the same with type P.
 # Sample outputs from running the tests
-# Output from Design 2
+## Output from Design 2
 
 ```
 if the type is Polar, result as follow:
@@ -101,7 +101,7 @@ Computed Cartesian as (10.2,4.499999999999999)
 
 ```
 
-# Output from Design 3
+## Output from Design 3
 
 ```
 if the type is Cartesian, result as follow:
@@ -200,7 +200,7 @@ Computed Polar as (22.8,45.3)
 
 ```
 
-# Output from Design 6
+## Output from Design 6
 
 ```
 if the type is Cartesian, result as follow:
@@ -330,7 +330,7 @@ Stored as Polar [22.3,1.4000000000000004]
 ```
 
 
-# the table 
+# The table 
 | Design/value |   Input     |           as Polar                     |               Cartesian                  |
 | ------------ | ---------   | -------------------------------------  | --------------------------------------   |
 | Design2      | P 2.4 5.6   | (2.4,5.6)                              | (2.388545759956395,0.2341989594219587)   |
@@ -343,4 +343,24 @@ Stored as Polar [22.3,1.4000000000000004]
 |              | C 22.5 1.8  | (22.571885167172013,4.573921259900861) | (22.499999999999996,1.8)                 |
 |              | C 3.8 9.7   | (10.417773274553443,68.60710964801855) | (3.8000000000000007,9.7)                 |
 |              | C 10.2 4.5  | (11.148542505637227,23.805943518457717)| (10.2,4.499999999999999)                 |
-| Design3      |               |
+| Design3      | P 12.3 5.7  | (12.3,5.7)                             | (12.239183510523084,1.2216329218467599)  |                             
+|              | P 12.4 9.5  | (12.4,9.5)                             | (12.22994145906167,2.0465903126724028)   |
+|              | P 22 14.2   | (22.0,14.2)                            | (21.327797697693054,5.396762489333656)   |
+|              | P 12.4 2.4  | (12.4,2.4)                             | (12.389123093225844,0.5192581062420754)  |
+|              | P 22.8 45.3 | (22.8, 45.3)                           | (16.03739922407949,16.206228004304226)   |
+|              | C 20.0 34.6 | (39.964484232878576,59.97059823848534) | (20.0,34.6)                              |
+|              | C 12.3 14.8 | (19.243960091415698,50.27067075164096) | (12.3,14.8)                              |
+|              | C 23.4 18.2 | (29.644561052577586,37.8749836510982)  | (23.4,18.2)                              |
+|              | C 1.5 2.9   | (3.2649655434629015,62.650124219930134)| (1.5,2.9)                                |
+|              | C 12.4 9.9  | (15.867261893597144,38.603414788527786)| (12.4,9.9)                               |
+| Design6      | P 
+|              | P 
+|              | P 
+|              | P 
+|              | P 
+|              | C 12.5 18.6 | (22.410042391749286,56.09720159691652) | (12.5,18.6)                              |
+|              | C 12.4 6.5  | (14.000357138301867,27.663238327818018)| (12.4,6.5)                               |
+|              | C 4.5 99.2  | (99.3020140782653,87.4026777059874)    | (4.5 99.2)                               |
+|              | C 2.3 91.2  | 
+|              | C
+|              | C
