@@ -271,7 +271,7 @@ public class EfficiencyTest {
      * @param args
      */
     public static void main(String[] args){
-        int testTime = 1;
+        int testTime = 1000;
 
         System.out.println("Average time for getting X of Cartesian from Cartesian PointCP: "+getC_XPointCP('C', testTime)+"ms");
         System.out.println("Average time for getting X of Cartesian from Cartesian Design2: "+getC_XDesign2('C', testTime)+"ms");
