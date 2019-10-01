@@ -1,16 +1,12 @@
 | Type | Collection | Time | Collection | Time | Collection | Time |
 | --- | --- | --- |--- | --- | --- |--- | 
-| oridinary arrays | n = 100000000|  | n = 10000000 | | n = 10000000||
-| ArrayList | n = 100000000 | 116275ms | n = 10000000 | | n = 10000000| |
+| oridinary arrays | n = 100000000| 15983ms | n = 10000000 | 1084ms | n = 10000000| 129ms |
+| ArrayList | n = 100000000 | 116275ms | n = 10000000 | 6740ms | n = 10000000| 273ms |
 | LinkedList | n = 100000000 | 356812ms | n = 10000000 | 24061ms | n = 10000000| 531ms |
 
 
 (Code of arrays)
 
-
-import java.util.Random;
-
-public class list {
 
 	public static void main(String[] args) {
 	
@@ -29,16 +25,10 @@ public class list {
 		long end = System.currentTimeMillis();
 		
 	    System.out.println("for list, time is " + (end - start) + "ms");
-}
-}
-}
+}}
 
 (Code of Arraylist)
 
-import java.util.ArrayList;
-import java.util.Random;
-
-public class Array {
 
 	public static void main(String[] args) {
 	
@@ -62,10 +52,6 @@ public class Array {
   
 (Code of LinkedList)
 
-import java.util.LinkedList;
-import java.util.Random;
-
-public class Linkedlist {
 
 	public static void main(String[] args) {
 		int n = 100000000;
@@ -81,7 +67,6 @@ public class Linkedlist {
 	
     System.out.println("for Linkedlist, time is " + (end - start) + "ms");
 }
-
 }
 
 
