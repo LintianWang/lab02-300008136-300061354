@@ -29,9 +29,7 @@ public class list {
 		long end = System.currentTimeMillis();
 		
 	    System.out.println("for list, time is " + (end - start) + "ms");
-}
-}
-
+}}
 
 (Code of Arraylist)
 
@@ -82,3 +80,4 @@ public class Linkedlist {
     System.out.println("for Linkedlist, time is " + (end - start) + "ms");
 }
 }
+
